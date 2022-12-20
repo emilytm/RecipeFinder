@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url('./background.png');
+   background-size: cover; 
+   background-position: center;
+   padding-top: 3em;
+   padding-bottom: 3em;
+}
+
+h1 {
+    color: pink;
+    margin-block-start: 0;
+}
+
+.recipe-list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.recipe-box {
+    max-width: 400px;
+    border: 1px solid gray;
+    display: grid;
+    grid-template: 2fr 1fr 1fr / 3fr 1fr 1fr 1em;
+    grid-template-areas: 
+        "pic title source ."
+        "pic tags   time  ."
+        "pic ing .   ."
+    ;
+    /*grid-template: 2fr 1fr 1fr 1fr 1em / 1em 1fr 1fr 1em ;
+    grid-template-areas: 
+        ". pic pic ."
+        ". title source ."
+        ". tags time ."
+        ". ing ing ."
+    ;*/
+}   
+.recipe-image {
+    grid-area: pic;
+    align-self: stretch;
+}
+.recipe-title {
+    grid-area: title;
+}
+.recipe-source {
+    grid-area: source;
+    background-color: aquamarine;
+}
+.recipe-tags {
+    grid-area: tags;
+    background-color: bisque;
+}
+.recipe-time {
+    grid-area: time;
+}
+.recipe-special-ingredients {
+    grid-area: ing;
+}
+.recipe-box img {
+    max-width: 300px;
+}
