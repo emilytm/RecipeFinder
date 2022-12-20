@@ -5,10 +5,13 @@ console.log(recipes[0])
 renderRecipes(recipes)
 
 function renderRecipes(recipes) {
+    const recipeList = document.getElementById('recipe-list')
     let recipeListHtml = ""
+    recipeList.innerHTML = ""
     for (let recipe of recipes) {
         recipeListHtml += getRecipeHtml(recipe)
     }
+    recipeList.innerHTML = recipeListHtml
 }
 
 function getRecipeHtml(recipe) {
@@ -24,5 +27,5 @@ function getRecipeHtml(recipe) {
             <p class="recipe-made">${recipe.lastmade}</p>
          </div>
     `
-    console.log(newHtml)
+    return newHtml
 }
