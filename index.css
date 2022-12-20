@@ -3,15 +3,14 @@
 body {
     margin: 0;
     font-family: 'Rubik',Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
 }
 
 header {
    background-image: url('./background.png');
    background-size: cover; 
-   background-position: center;
+   background-position: top;
    border-bottom: 2px solid #ded9db;
-   padding: 1em 2em;
+   padding: 1.5em;
 }
 
 main {
