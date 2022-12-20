@@ -4,6 +4,14 @@ console.log(recipes[0])
 
 renderRecipes(recipes)
 
+document.addEventListener('click',function(e){
+    if(e.target.dataset.recipe){
+        console.log("RECIPE CLICKED")
+    } else {
+        console.log("SOMETHING CLICKED")
+    }
+})
+
 function renderRecipes(recipes) {
     const recipeList = document.getElementById('recipe-list')
     let recipeListHtml = ""
@@ -17,7 +25,7 @@ function renderRecipes(recipes) {
 function getRecipeHtml(recipe) {
     let newHtml = ""
     newHtml = `
-        <div class="recipe-box">
+        <div class="recipe-box" data-recipe=${recipe.id}>
             <img class="recipe-image" src="${recipe.image}" alt="Picture of selected recipe">
             <h3 class="recipe-title">${recipe.title}</h3>
             <p class="recipe-source">${recipe.source}</p>

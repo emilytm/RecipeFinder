@@ -85,7 +85,7 @@ h1, h2, h3, p {
 .recipe-box:hover {
     background-color: #fffafc;
     box-shadow: 0px 1px 2px #d4cbcf;
-    cursor: pointer;
+    cursor: default;
 }
 
 .recipe-image {
