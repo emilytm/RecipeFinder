@@ -29,7 +29,7 @@ export default [
     },
     {
         id: 1,
-        title: 'Forever Brownies',
+        title: 'Malted Forever Brownies',
         source: 'Dessert Person',
         link: 'https://www.epicurious.com/recipes/food/views/malted-forever-brownies',
         image: 'https://assets.epicurious.com/photos/5fca6f8d9014cc9a8df3d074/1:1/w_960,c_limit/Malted_Forever_Brownies_VOG_final.jpg',
