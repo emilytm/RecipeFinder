@@ -28,15 +28,18 @@ function searchRecipes(searchTerm) {
     let searchResults = []
 
     searchResults = recipes.filter(recipe => {
-        if (recipe.title.includes(searchTerm)){
-            console.log("Found ",searchTerm," in ",recipe.title)
-            return true
-        } else {
-            console.log("Did not find ",searchTerm," in ",recipe.title)
-            return false
+        let recipeValues = Object.values(recipe)
+        console.log(recipeValues)
+        for (let value of recipeValues) {
+            if(typeof value === 'string'){
+                if(value.includes(searchTerm)){
+                    return true
+                }
+            } 
         }
     })
     console.log(searchResults)
+    renderRecipes(searchResults)
     //search recipe by recipe to see if it includes the term
     //display the array of new recipes in the list
 }
@@ -55,7 +58,7 @@ function getRecipeHtml(recipe) {
     let newHtml = ""
     newHtml = `
         <div class="recipe-box" data-recipe=${recipe.id}>
-            <img class="recipe-image" data-recipe=${recipe.id} src="${recipe.image}" alt="Picture of selected recipe">
+            <img class="recipe-image" data-recipe=${recipe.id} src="${recipe.image}" alt="Picture of ${recipe.title}">
             <h3 class="recipe-title" data-recipe=${recipe.id}>${recipe.title}</h3>
             <p class="recipe-source" data-recipe=${recipe.id}>${recipe.source}</p>
             <p class="recipe-tags" data-recipe=${recipe.id}>${recipe.tags}</p>
