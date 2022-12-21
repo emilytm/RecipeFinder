@@ -28,7 +28,6 @@ body {
    height: min-content;
 }
 .menu-mobile {
-    display: none;
     width: min-content;
     height: min-content;
     text-align: center;
@@ -149,6 +148,19 @@ h1, h2, h3, p {
     grid-area: lastmade;
     justify-self: end;
 }
+form {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    grid-gap: .5em;
+}
+form button {
+    background-color: #82093c;
+    border: none;
+    padding: 0 1em;
+    border-radius: 4px;
+    color: white;
+}
 
 input {
     width: 90%;
@@ -162,4 +174,8 @@ input {
 
 input:active {
     background-color: white;
+}
+
+.hidden {
+    display: none;
 }

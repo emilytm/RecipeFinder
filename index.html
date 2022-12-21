@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="./index.js" type="module"></script>
-
+    <script src="https://kit.fontawesome.com/d8fa607b6e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,9 +18,12 @@
         </div>
         <div class="hero">
             <h3>by emilytm</h2>
-            <input id="searchbox" class="searchbox" placeholder="Search by ingredient, cuisine, or recipe name">
+            <form class="search" id="search">
+                <input id="searchbox" class="searchbox" type="search" name="search" placeholder="Search by ingredient, cuisine, or recipe name">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
         </div>
-        <div class="menu-mobile">
+        <div class="menu-mobile hidden">
             <ul class="menu-list">
                 <li>EXPLORE</li>
                 <li>LOG IN</li>
@@ -30,24 +33,7 @@
     </header>
     <main>
         <div class="recipe-list" id="recipe-list">
-            <div class="recipe-box">
-                <img class="recipe-image" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80" alt="Picture of selected recipe">
-                <h3 class="recipe-title">Classic Croissants</h3>
-                <p class="recipe-source">NYTimes</p>
-                <p class="recipe-tags">Baking, Classic, French</p>
-                <p class="recipe-time">4 hr active</p>
-                <p class="recipe-ingredients">Butter</p>
-                <p class="recipe-made">3 wk</p>
-            </div>
-            <div class="recipe-box">
-                <img class="recipe-image" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80" alt="Picture of selected recipe">
-                <h3 class="recipe-title">Classic Croissants</h3>
-                <p class="recipe-source">NYTimes</p>
-                <p class="recipe-tags">Baking, Classic, French</p>
-                <p class="recipe-time">4 hr active</p>
-                <p class="recipe-ingredients">Butter</p>
-                <p class="recipe-made">3 wk</p>
-            </div>
+            <!--Recipes-->
         </div>
     </main>
 </body>
