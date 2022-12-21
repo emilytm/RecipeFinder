@@ -2,13 +2,12 @@ import recipes from "./recipes.js"
 
 const menu =  document.getElementById('menu')
 const modal = document.getElementById('modal')
-
-renderRecipes(recipes)
-
 const searchBar = document.getElementById('search')
+
+document.addEventListener("DOMContentLoaded",renderRecipes(recipes))
+
 searchBar.addEventListener('submit',function(e){
     e.preventDefault()
-
     let searchTerm = searchBar.elements.search.value
     searchRecipes(searchTerm.trim())
     searchBar.elements.search.value = ""
@@ -65,7 +64,7 @@ function getRecipeHtml(recipe) {
             <h3 class="recipe-title" data-recipe=${recipe.id}>${recipe.title}</h3>
             <p class="recipe-source" data-recipe=${recipe.id}>${recipe.source}</p>
             <p class="recipe-tags" data-recipe=${recipe.id}>${recipe.tags}</p>
-            <p class="recipe-time" data-recipe=${recipe.id}>${recipe.time.active}</p>
+            <p class="recipe-time" data-recipe=${recipe.id}>${recipe.time}</p>
             <p class="recipe-ingredients" data-recipe=${recipe.id}>${recipe.ingredients}</p>
             <p class="recipe-made" data-recipe=${recipe.id}>${recipe.lastmade}</p>
          </div>
