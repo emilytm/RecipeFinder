@@ -170,6 +170,7 @@ input {
     border-radius: 4px;
     padding-inline-start: 1em;
     font-family: 'Rubik',Arial, Helvetica, sans-serif;
+    font-size: 1em;
     background-color: #fffafc;
 }
 
@@ -205,4 +206,13 @@ span {
     padding-left: 1em;
     color:#82093c;
     cursor: pointer;
+}
+
+.grid-right {
+    text-align: right;
+}
+
+button {
+    font-family: 'Rubik';
+    font-weight: bold;
 }
