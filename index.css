@@ -216,3 +216,13 @@ button {
     font-family: 'Rubik';
     font-weight: bold;
 }
+footer {
+    background-color: #3b2e34;
+    color: #d79fb6;
+    text-align: center;
+    padding: 1em;
+}
+footer a {
+    color: #ede6e9;
+    text-decoration: none;
+}
