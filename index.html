@@ -13,7 +13,7 @@
     <header>
         <div class="header-nav">
             <h1>Recipe Finder</h1>
-            <h5>MENU</h5>
+            <h5 data-menu="menu">MENU</h5>
 
         </div>
         <div class="hero">
@@ -23,17 +23,20 @@
                 <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
-        <div class="menu-mobile hidden">
+        <div id="menu" class="menu-mobile hidden">
             <ul class="menu-list">
-                <li>EXPLORE</li>
-                <li>LOG IN</li>
-                <li>SIGN UP</li>
+                <li data-menu="explore">EXPLORE</li>
+                <li data-menu="login">LOG IN</li>
+                <li data-menu="signup">SIGN UP</li>
             </ul>
         </div>
     </header>
     <main>
         <div class="recipe-list" id="recipe-list">
             <!--Recipes-->
+        </div>
+        <div class="modal" data-modal="modal">
+            <h2>Log in/Sign Up Modal</h2>
         </div>
     </main>
 </body>

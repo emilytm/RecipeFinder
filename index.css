@@ -179,3 +179,17 @@ input:active {
 .hidden {
     display: none;
 }
+
+.modal {
+    position: fixed;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: 5em;
+    background-color: #3b2e34;
+}
+
+.modal h2 {
+    color: white;
+}

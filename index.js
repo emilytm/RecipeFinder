@@ -15,9 +15,17 @@ searchBar.addEventListener('submit',function(e){
 
 document.addEventListener('click',function(e){
     if(e.target.dataset.recipe){
-        console.log("RECIPE CLICKED")
+        let recId = parseInt(e.target.dataset.recipe)
+        let recLink = recipes.find(recipe => recipe.id === recId).link
+        window.open(recLink, '_blank').focus()
+        document.getElementById('menu').classList.add('hidden')
+
+    } else if (e.target.dataset.menu) {
+        console.log("menu clicked")
+        document.getElementById('menu').classList.toggle('hidden')  
     } else {
         console.log("SOMETHING CLICKED")
+        document.getElementById('menu').classList.add('hidden')
     }
 
     console.log(e)
