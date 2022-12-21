@@ -50,12 +50,16 @@ function searchRecipes(searchTerm) {
 
 function renderRecipes(recipes,results) {
     const recipeList = document.getElementById('recipe-list')
-    const ifResultsHtml = `
-        <h2>${recipes.length} Search Results <span data-clear='clear'>Clear</span></h2>
+    const myRecipesTitle =`<h2 class="list-title">My Recipes</h2>`
+    const ifResultsTitle = `
+        <h2 class="list-title">${recipes.length} Search Results <span data-clear='clear'>Clear</span></h2>
     `
     let recipeListHtml = ""
+    
     if(results === true) {
-        recipeListHtml += ifResultsHtml
+        recipeListHtml += ifResultsTitle
+    } else {
+        recipeListHtml += myRecipesTitle
     }
     recipeList.innerHTML = ""
     for (let recipe of recipes) {

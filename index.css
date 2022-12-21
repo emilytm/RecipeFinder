@@ -85,7 +85,7 @@ h1, h2, h3, p {
     background-color: white;
     border-radius: 4px;
 
-    grid-template-rows: 150px repeat(3, min-content) 1fr 1fr 1fr 1em;
+    grid-template-rows: 150px 1fr 1fr 1fr 1em;
     grid-template-columns: 1em 1.25fr .75fr 1em;
     grid-template-areas: 
         "pic pic pic pic"
@@ -127,11 +127,13 @@ h1, h2, h3, p {
 .recipe-title {
     grid-area: title;
     align-self: center;
+    color: #82093c;
 }
 .recipe-source {
     grid-area: source;
     justify-self: end;
     align-self: center;
+    
 }
 .recipe-tags {
     grid-area: tags;
@@ -225,4 +227,21 @@ footer {
 footer a {
     color: #ede6e9;
     text-decoration: none;
+}
+
+@media (min-width: 768px){
+    .recipe-list {
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        grid-template-rows: auto repeat(auto-fit);
+        grid-gap: 1em;
+    }
+    .list-title {
+        grid-column: 1 / -1;
+    }
+    header ul {
+        display: flex;
+    }
+
 }
