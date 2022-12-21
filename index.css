@@ -236,6 +236,9 @@ footer a {
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
         grid-template-rows: auto repeat(auto-fit);
         grid-gap: 1em;
+        padding-bottom: 4em;
+        padding-left: 0;
+        padding-right: 0;
     }
     .list-title {
         grid-column: 1 / -1;
@@ -243,5 +246,22 @@ footer a {
     header ul {
         display: flex;
     }
-
+    .hero,.header-nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .search {
+        justify-content: start;
+        max-width: 60%;
+    }
+    .menu-mobile-title {
+        display: none;
+    }
+    .header-nav li {
+        padding: 1em;
+    }
+    .menu-desktop {
+        font-weight: bolder;
+        color:#3b2e34
+    }
 }
