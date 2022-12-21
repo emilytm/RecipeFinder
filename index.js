@@ -4,7 +4,7 @@ const menu =  document.getElementById('menu')
 const modal = document.getElementById('modal')
 const searchBar = document.getElementById('search')
 
-document.addEventListener("DOMContentLoaded",renderRecipes(recipes))
+document.addEventListener("DOMContentLoaded",renderRecipes(recipes,false))
 
 searchBar.addEventListener('submit',function(e){
     e.preventDefault()
@@ -25,6 +25,8 @@ document.addEventListener('click',function(e){
     } else if ((e.target.dataset.menu === 'login' || e.target.dataset.menu === 'signup')){
         modal.classList.toggle('hidden')
         menu.classList.toggle('hidden') 
+    } else if (e.target.dataset.clear){
+        renderRecipes(recipes,false)
     } else {
         menu.classList.add('hidden')
         modal.classList.add('hidden')
@@ -43,12 +45,18 @@ function searchRecipes(searchTerm) {
             } 
         }
     })
-    renderRecipes(searchResults)
+    renderRecipes(searchResults,true)
 }
 
-function renderRecipes(recipes) {
+function renderRecipes(recipes,results) {
     const recipeList = document.getElementById('recipe-list')
+    const ifResultsHtml = `
+        <h2>${recipes.length} Search Results <span data-clear='clear'>Clear</span></h2>
+    `
     let recipeListHtml = ""
+    if(results === true) {
+        recipeListHtml += ifResultsHtml
+    }
     recipeList.innerHTML = ""
     for (let recipe of recipes) {
         recipeListHtml += getRecipeHtml(recipe)
