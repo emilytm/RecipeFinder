@@ -181,15 +181,20 @@ input:active {
 }
 
 .modal {
-    position: fixed;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: 5em;
+    padding: 2em;
+    text-align: center;
     background-color: #3b2e34;
+    border-radius: 8px;
 }
 
-.modal h2 {
+.modal h2,
+.modal h5 {
     color: white;
 }

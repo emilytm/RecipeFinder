@@ -1,6 +1,7 @@
 import recipes from "./recipes.js"
 
-console.log(recipes[0])
+const menu =  document.getElementById('menu')
+const modal = document.getElementById('modal')
 
 renderRecipes(recipes)
 
@@ -18,26 +19,23 @@ document.addEventListener('click',function(e){
         let recId = parseInt(e.target.dataset.recipe)
         let recLink = recipes.find(recipe => recipe.id === recId).link
         window.open(recLink, '_blank').focus()
-        document.getElementById('menu').classList.add('hidden')
-
-    } else if (e.target.dataset.menu) {
-        console.log("menu clicked")
-        document.getElementById('menu').classList.toggle('hidden')  
+        menu.classList.add('hidden')
+        modal.classList.add('hidden')
+    } else if (e.target.dataset.menu === 'menu') {
+        menu.classList.toggle('hidden') 
+    } else if ((e.target.dataset.menu === 'login' || e.target.dataset.menu === 'signup')){
+        modal.classList.toggle('hidden')
+        menu.classList.toggle('hidden') 
     } else {
-        console.log("SOMETHING CLICKED")
-        document.getElementById('menu').classList.add('hidden')
+        menu.classList.add('hidden')
+        modal.classList.add('hidden')
     }
-
-    console.log(e)
 })
 
 function searchRecipes(searchTerm) {
-    console.log(searchTerm)
     let searchResults = []
-
     searchResults = recipes.filter(recipe => {
         let recipeValues = Object.values(recipe)
-        console.log(recipeValues)
         for (let value of recipeValues) {
             if(typeof value === 'string'){
                 if(value.includes(searchTerm)){
@@ -46,10 +44,7 @@ function searchRecipes(searchTerm) {
             } 
         }
     })
-    console.log(searchResults)
     renderRecipes(searchResults)
-    //search recipe by recipe to see if it includes the term
-    //display the array of new recipes in the list
 }
 
 function renderRecipes(recipes) {
