@@ -81,7 +81,8 @@ h1 {
 
 }
 .hero {
-   background-color: #f7b6d1;
+   background-image: url(/assets/background.png);
+   background-size: cover;
    border-bottom: 2px solid #e1b4c5;
    padding: 4em 0;
 }
