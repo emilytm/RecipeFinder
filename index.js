@@ -3,8 +3,19 @@ import recipes from "./recipes.js"
 const menu =  document.getElementById('menu')
 const modal = document.getElementById('modal')
 const searchBar = document.getElementById('search')
+const footer = document.createElement('footer')
 
-document.addEventListener("DOMContentLoaded",renderRecipes(recipes,false))
+footer.innerHTML = `
+    <footer>
+    <h5>Made by <a href="https://github.com/emilytm" target="_blank">emilytm</a></h5>
+    <h5>Get cooking.</h5>
+    </footer>
+    `
+
+document.addEventListener("DOMContentLoaded",
+    renderRecipes(recipes,false),
+    document.body.appendChild(footer.content)
+)
 
 searchBar.addEventListener('submit',function(e){
     e.preventDefault()
