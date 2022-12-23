@@ -6,7 +6,39 @@ const recipeDisplay = document.getElementById('recipe-display')
 let recipeId = params.get('recipe')
 let recipe = recipes.find(recipe => recipe.id === parseInt(recipeId))
 
-document.addEventListener('DOMContentLoaded',renderRecipe(recipe))
+document.addEventListener('DOMContentLoaded',findRecipe(recipeId))
+
+function findRecipe(recipeId) {
+    let isValidId = checkValidRecipe(recipeId)
+    if (isValidId === 2) {
+        getRandomRecipe()
+    } else if (isValidId === 1) {
+        renderRecipe(recipes[recipeId])
+    } else {
+        getRandomRecipe()
+    }
+}
+
+function checkValidRecipe(recipeId) {
+    if (recipeId === "explore") {
+        return 2
+    } else if (recipes.find(recipe => recipe.id === parseInt(recipeId))) {
+        return 1
+    } else {
+        return 0
+    }
+}
+
+function getRandomRecipe(){
+    let ids = recipes.map(recipe => recipe.id)
+    let index = Math.floor(Math.random()*(ids.length))
+    console.log(`INDEX IS: ${index}`)
+    console.log(`IDS ARRAY IS: ${ids}`)
+    console.log(`ID OF RECIPE[INDEX] IS: ${recipes[index].id}`)
+
+    console.log(recipes[index].id)
+    renderRecipe(recipes[index])
+}
 
 function renderRecipe(recipe) {
     let recipeBoxHtml = getRecipeBoxHtml(recipe)
@@ -16,6 +48,7 @@ function renderRecipe(recipe) {
 }
 
 function getRecipeBoxHtml(recipe) {
+    console.log(recipe.id)
     let newHtml = ""
     newHtml = `
         <div class="recipe-box test" data-recipe=${recipe.id}>
