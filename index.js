@@ -31,7 +31,8 @@ searchBar.addEventListener('submit',function(e){
 document.addEventListener('click',function(e){
     if(e.target.dataset.recipe){
         let recId = parseInt(e.target.dataset.recipe)
-        let recLink = recipes.find(recipe => recipe.id === recId).link
+        let recLink = `recipe.html?recipe=${recId}`
+        //let recLink = recipes.find(recipe => recipe.id === recId).link
         window.open(recLink, '_blank').focus()
         menu.classList.add('hidden')
         modal.classList.add('hidden')
@@ -98,3 +99,4 @@ function getRecipeHtml(recipe) {
     `
     return newHtml
 }
+

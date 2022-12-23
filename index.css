@@ -41,8 +41,9 @@ body {
     gap: 2em;
 }
 .primary-header {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -116,7 +117,7 @@ h1 {
     cursor: pointer;
 }
 
-main {
+.home {
     background-color: #ede6e9;
 }
 
@@ -343,3 +344,12 @@ footer a {
     }
 }
 
+
+
+.recipe-page {
+    background-color: #f7d5e3;
+}
+.recipe-display {
+    padding: 1em;
+
+}
