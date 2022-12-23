@@ -17,21 +17,11 @@ document.addEventListener('click',function(e){
     if(e.target.dataset.recipe){
         let recId = parseInt(e.target.dataset.recipe)
         let recLink = `recipe.html?recipe=${recId}`
-        //let recLink = recipes.find(recipe => recipe.id === recId).link
         window.open(recLink, '_blank').focus()
-        menu.classList.add('hidden')
-        modal.classList.add('hidden')
-    } else if (e.target.dataset.menu === 'menu') {
-        menu.classList.toggle('hidden') 
     } else if ((e.target.dataset.menu === 'login' || e.target.dataset.menu === 'signup')){
-        modal.classList.toggle('hidden')
-        menu.classList.toggle('hidden')
         alert("This functionality coming soonish") 
     } else if (e.target.dataset.clear){
         renderRecipes(recipes,false)
-    } else {
-        menu.classList.add('hidden')
-        modal.classList.add('hidden')
     }
 })
 
@@ -64,6 +54,13 @@ function renderRecipes(recipes,results) {
         recipeListHtml += myRecipesTitle
     }
     recipeList.innerHTML = ""
+    recipes.sort(function compareFn(a,b){
+        if(a.title < b.title) {
+            return -1
+        } else {
+            return 1
+        }
+    })
     for (let recipe of recipes) {
         recipeListHtml += getRecipeHtml(recipe)
     }
