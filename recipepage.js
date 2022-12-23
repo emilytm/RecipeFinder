@@ -6,7 +6,7 @@ const recipeDisplay = document.getElementById('recipe-display')
 let recipeId = params.get('recipe')
 let recipe = recipes.find(recipe => recipe.id === parseInt(recipeId))
 
-document.addEventListener('DOMContentLoaded',renderRecipe(recipe),)
+document.addEventListener('DOMContentLoaded',renderRecipe(recipe))
 
 function renderRecipe(recipe) {
     let recipeBoxHtml = getRecipeBoxHtml(recipe)
@@ -39,8 +39,7 @@ function getInstructionsHtml(recipe) {
             <li>${step}</li>
         `
     });
-    console.log(instructionsHtml)
-    instructionsHtml += "</ol"
+    instructionsHtml += `</ol><h5><a href="${recipe.link}" target="_blank">See Original Recipe</a></h5>`
 
     return instructionsHtml
 }

@@ -266,15 +266,15 @@ footer a {
     }
     .primary-header {
         justify-content: space-between;
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
 
 
 .recipe-page {
-    background-color: white;
+    background-color: rgb(255, 246, 252);
 }
 
 .recipe-display {
@@ -286,4 +286,13 @@ footer a {
 .recipe-display li {
     padding-top: 1em;
     line-height: 1.5em;
+}
+
+.recipe-display a {
+    text-decoration: none;
+}
+
+.recipe-display h5 {
+    width: 100%;
+    text-align: center;
 }
