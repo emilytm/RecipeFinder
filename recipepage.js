@@ -32,11 +32,6 @@ function checkValidRecipe(recipeId) {
 function getRandomRecipe(){
     let ids = recipes.map(recipe => recipe.id)
     let index = Math.floor(Math.random()*(ids.length))
-    console.log(`INDEX IS: ${index}`)
-    console.log(`IDS ARRAY IS: ${ids}`)
-    console.log(`ID OF RECIPE[INDEX] IS: ${recipes[index].id}`)
-
-    console.log(recipes[index].id)
     renderRecipe(recipes[index])
 }
 
@@ -48,10 +43,8 @@ function renderRecipe(recipe) {
 }
 
 function getRecipeBoxHtml(recipe) {
-    console.log(recipe.id)
-    let newHtml = ""
-    newHtml = `
-        <div class="recipe-box test" data-recipe=${recipe.id}>
+    let newHtml = `
+        <div class="recipe-box" data-recipe=${recipe.id}>
             <img class="recipe-image" data-recipe=${recipe.id} src="${recipe.image}" alt="Picture of ${recipe.title}">
             <h3 class="recipe-title" data-recipe=${recipe.id}>${recipe.title}</h3>
             <p class="recipe-source grid-right" data-recipe=${recipe.id}>From: ${recipe.source}</p>
@@ -65,7 +58,6 @@ function getRecipeBoxHtml(recipe) {
 }
 
 function getInstructionsHtml(recipe) {
-
     let instructionsHtml = "<ol>"
     recipe.instructions.forEach(step => {
         instructionsHtml += `
@@ -73,6 +65,5 @@ function getInstructionsHtml(recipe) {
         `
     });
     instructionsHtml += `</ol><h5><a href="${recipe.link}" target="_blank">See Original Recipe</a></h5>`
-
     return instructionsHtml
 }

@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 
+
+/* --- Page Structure --- */
+
 body {
     margin: 0;
     font-family: 'Rubik',Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+
+/* --- Header and Navigation Formatting --- */
 
 .primary-navigation {
     list-style: none;
@@ -29,17 +35,6 @@ body {
     }
 }
 
-.primary-navigation a {
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bolder;
-    color:#3b2e34;
-}
-
-.flex {
-    display: flex;
-    gap: 2em;
-}
 .primary-header {
     background-color: white;
     padding-left: 1rem;
@@ -48,10 +43,6 @@ body {
     align-items: center;
 }
 
-h1 {
-    margin-block-start: 0;
-    margin-top: 1.5rem;
-}
 .mobile-nav-toggle {
     position: absolute;
     top: 1.5rem;
@@ -79,8 +70,11 @@ h1 {
     position: fixed;
     top: 0;
     border-bottom: 2px solid #d79fb6;
-
 }
+
+
+/* --- Homepage Hero Section Formatting --- */
+
 .hero {
    background-image: url(/assets/background.png);
    background-size: cover;
@@ -91,45 +85,6 @@ h1 {
 
 .hero h3 {
     margin-block-start: 0;
-}
-.menu-mobile {
-    width: min-content;
-    height: min-content;
-    text-align: center;
-    position: fixed;
-    top: 4em;
-    right: .25em;
-    background-color: #f6e2e9;
-    border: 2px solid #d79fb6;
-    border-top: none;
-}
-
-.menu-mobile li {
-    padding: 1em 2em;
-}
-.menu-mobile li:hover,
-.menu-mobile li:active {
-    background-color: #d79fb6;
-}
-
-.header-nav h5 {
-    padding-right: 1em;
-    cursor: pointer;
-}
-
-.home {
-    background-color: #ede6e9;
-}
-
-h1, h2, h3, p {
-    color: #3b2e34;
-}
-
-.recipe-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 1em;
-    padding: 1em;
 }
 
 form {
@@ -161,22 +116,87 @@ input:active {
     background-color: white;
 }
 
-.hidden {
-    display: none;
+button {
+    font-family: 'Rubik';
+    font-weight: bold;
 }
 
-.modal {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 5em;
-    padding: 2em;
-    text-align: center;
+
+/* -- Homepage Recipe List Formatting --*/
+
+.home {
+    background-color: #ede6e9;
+}
+
+.recipe-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    padding: 1em;
+}
+
+/* -- Footer Formatting --*/
+
+footer {
     background-color: #3b2e34;
-    border-radius: 8px;
+    color: #d79fb6;
+    text-align: center;
+    padding: 1em;
+}
+footer a {
+    color: #ede6e9;
+    text-decoration: none;
+}
+
+
+/* --- Recipe/Explore Page Formatting and Styling --- */
+
+.recipe-page {
+    background-color: rgb(255, 246, 252);
+}
+
+.recipe-display {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+.recipe-display li {
+    padding-top: 1em;
+    line-height: 1.5em;
+}
+
+.recipe-display a {
+    text-decoration: none;
+}
+
+.recipe-display h5 {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* --- Typography --- */
+
+h1 {
+    margin-block-start: 0;
+    margin-top: 1.5rem;
+}
+
+h1 a {
+    text-decoration: none;
+    color:#3b2e34;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color:#3b2e34;
+}
+
+h1, h2, h3, p {
+    color: #3b2e34;
 }
 
 .modal h2,
@@ -191,24 +211,8 @@ span {
     cursor: pointer;
 }
 
-.grid-right {
-    text-align: right;
-}
 
-button {
-    font-family: 'Rubik';
-    font-weight: bold;
-}
-footer {
-    background-color: #3b2e34;
-    color: #d79fb6;
-    text-align: center;
-    padding: 1em;
-}
-footer a {
-    color: #ede6e9;
-    text-decoration: none;
-}
+/* --- Accommodating Wider Screens --- */
 
 @media (min-width: 768px){
     .recipe-list {
@@ -272,32 +276,16 @@ footer a {
 }
 
 
-
-.recipe-page {
-    background-color: rgb(255, 246, 252);
+/* --- Utility Classes --- */
+.flex {
+    display: flex;
+    gap: 2em;
 }
 
-.recipe-display {
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-}
-.recipe-display li {
-    padding-top: 1em;
-    line-height: 1.5em;
+.hidden {
+    display: none;
 }
 
-.recipe-display a {
-    text-decoration: none;
-}
-
-.recipe-display h5 {
-    width: 100%;
-    text-align: center;
-}
-
-h1 a {
-    text-decoration: none;
-    color:#3b2e34;
+.grid-right {
+    text-align: right;
 }

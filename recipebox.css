@@ -31,29 +31,35 @@
     object-fit: cover;
     border-radius: 4px 4px 0px 0px;
 }
+
 .recipe-title {
     grid-area: title;
     align-self: center;
     color: #82093c;
 }
+
 .recipe-source {
     grid-area: source;
     justify-self: end;
     align-self: center;
     
 }
+
 .recipe-tags {
     grid-area: tags;
 }
+
 .recipe-time {
     grid-area: time;
     justify-self: end;
     text-align: right;
 
 }
+
 .recipe-ingredients {
     grid-area: ingredients;
 }
+
 .recipe-made {
     grid-area: lastmade;
     justify-self: end;
