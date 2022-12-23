@@ -6,18 +6,19 @@ const recipeDisplay = document.getElementById('recipe-display')
 let recipeId = params.get('recipe')
 let recipe = recipes.find(recipe => recipe.id === parseInt(recipeId))
 
-renderRecipe(recipe)
+document.addEventListener('DOMContentLoaded',renderRecipe(recipe),)
 
 function renderRecipe(recipe) {
     let recipeBoxHtml = getRecipeBoxHtml(recipe)
+    let recipeInstructionsHtml = getInstructionsHtml(recipe)
     recipeDetails.innerHTML = ""
-    recipeDetails.innerHTML = recipeBoxHtml
+    recipeDetails.innerHTML = recipeBoxHtml + recipeInstructionsHtml
 }
 
 function getRecipeBoxHtml(recipe) {
     let newHtml = ""
     newHtml = `
-        <div class="recipe-box" data-recipe=${recipe.id}>
+        <div class="recipe-box test" data-recipe=${recipe.id}>
             <img class="recipe-image" data-recipe=${recipe.id} src="${recipe.image}" alt="Picture of ${recipe.title}">
             <h3 class="recipe-title" data-recipe=${recipe.id}>${recipe.title}</h3>
             <p class="recipe-source grid-right" data-recipe=${recipe.id}>From: ${recipe.source}</p>
@@ -28,4 +29,18 @@ function getRecipeBoxHtml(recipe) {
          </div>
     `
     return newHtml
+}
+
+function getInstructionsHtml(recipe) {
+
+    let instructionsHtml = "<ol>"
+    recipe.instructions.forEach(step => {
+        instructionsHtml += `
+            <li>${step}</li>
+        `
+    });
+    console.log(instructionsHtml)
+    instructionsHtml += "</ol"
+
+    return instructionsHtml
 }

@@ -8,7 +8,13 @@ export default [
         tags: 'French, Classic, Baking',
         lastmade: 'November 18, 2020',
         ingredients: 'Active Dry Yeast',
-        time: '4 hrs active, 14 hrs total'
+        time: '4 hrs active, 14 hrs total',
+        instructions: [
+            "Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. Once fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.",
+            "Meanwhile, grill or toast your bread.",
+            "Once the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.",
+            "Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”"
+        ]
     },
     {
         id: 2,
@@ -19,7 +25,13 @@ export default [
         tags: 'Twist, Tahini, Baking',
         lastmade: 'June 7, 2021',
         ingredients: 'Heavy Cream, Semisweet Chocolate',
-        time: '1.5 hrs active, 3 hrs total'
+        time: '1.5 hrs active, 3 hrs total',
+        instructions: [
+            "Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. Once fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.",
+            "Meanwhile, grill or toast your bread.",
+            "Once the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.",
+            "Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”"
+        ]
     },
     {
         id: 3,
@@ -30,7 +42,13 @@ export default [
         tags: 'Twist, Chocolate, Classic, Baking',
         lastmade: 'December 10, 2022',
         ingredients: 'Malted Milk Powder, Dutch Process Cocoa Powder',
-        time: '45 min active, 1.5 hrs total'
+        time: '45 min active, 1.5 hrs total',
+        instructions: [
+            "Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. Once fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.",
+            "Meanwhile, grill or toast your bread.",
+            "Once the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.",
+            "Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”"
+        ]
     },
     {
         id: 4,
@@ -41,7 +59,13 @@ export default [
         tags: 'Cooking, Appetizer, Vegetarian, Quick, Easy',
         lastmade: 'July 9, 2022',
         ingredients: 'Panko, Cremini Mushrooms',
-        time: '25 min'
+        time: '25 min',
+        instructions: [
+            "Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. Once fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.",
+            "Meanwhile, grill or toast your bread.",
+            "Once the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.",
+            "Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”"
+        ]
     },
     {
         id: 5,
@@ -52,7 +76,13 @@ export default [
         tags: 'Cooking, Vegetarian, Side, Easy, Quick',
         lastmade: 'Not yet',
         ingredients: 'Green Beans, Kale',
-        time: '20 min'
+        time: '20 min',
+        instructions: [
+            "Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. Once fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.",
+            "Meanwhile, grill or toast your bread.",
+            "Once the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.",
+            "Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”"
+        ]
     },
     {
         id: 6,
@@ -63,7 +93,13 @@ export default [
         tags: 'Soup, Healthy, Easy',
         lastmade: 'December 24, 2021',
         ingredients: 'Rosemary, Cauliflower',
-        time: '40 min'
+        time: '40 min',
+        instructions: [
+            "Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. Once fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.",
+            "Meanwhile, grill or toast your bread.",
+            "Once the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.",
+            "Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”"
+        ]
     },
     {
         id: 7,
@@ -75,14 +111,11 @@ export default [
         lastmade: 'Not yet',
         ingredients: 'Mixed Mushrooms, Country Bread, Fresh Red Chile, Hearty Greens, Fontina',
         time: '25 min',
-        instructions: `1. Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. One fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.
-
-        2. Meanwhile, grill or toast your bread.
-        
-        3. One the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.
-        
-        4. Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”
-        
-        `
+        instructions: [
+            "Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. Once fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.",
+            "Meanwhile, grill or toast your bread.",
+            "Once the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.",
+            "Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”"
+        ]
     }
 ]
