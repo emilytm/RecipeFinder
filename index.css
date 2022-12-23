@@ -41,8 +41,8 @@ body {
     gap: 2em;
 }
 .primary-header {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -54,7 +54,7 @@ h1 {
 .mobile-nav-toggle {
     position: absolute;
     top: 1.5rem;
-    right: 2rem;
+    right: 1rem;
     border: none;
     width: 2rem;
     aspect-ratio: 1;
@@ -84,7 +84,8 @@ h1 {
    background-image: url(/assets/background.png);
    background-size: cover;
    border-bottom: 2px solid #e1b4c5;
-   padding: 4em 0;
+   padding: 4rem 1rem 4rem 1rem;
+   font-size: smaller;
 }
 
 .hero h3 {
