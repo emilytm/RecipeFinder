@@ -75,13 +75,13 @@ export default [
         lastmade: 'Not yet',
         ingredients: 'Mixed Mushrooms, Country Bread, Fresh Red Chile, Hearty Greens, Fontina',
         time: '25 min',
-        instructions: `Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. One fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.
+        instructions: `1. Melt 2 tablespoons butter and olive oil together in a large, heavy skillet over medium-high heat. One fully hot, add mushrooms to pan and cook, stirring regularly, until they’ve released their water and started to turn golden brown, about 8 minutes.
 
-        Meanwhile, grill or toast your bread.
+        2. Meanwhile, grill or toast your bread.
         
-        One the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.
+        3. One the mushrooms have a nice color on them, add the garlic or shallots and cook, stirring constantly, for 1 minute. Drizzle with vinegar, most of the chile or chile flakes, salt and pepper and stir to combine. Add the greens; pretty much any kind aside from baby spinach will benefit from about 5 to 8 minutes cooking time, just until collapsed. If you’re me, you’ll add 1 more tablespoon vinegar for brightness at this point. Stir in remaining tablespoon butter and adjust seasonings to taste. Rip bread into irregular croutons and push them into the sauteed vegetables. Lay pieces of cheese atop everything. Turn the heat down to medium low, place a lid on the pan and let the cheese melt, which will take 5 to 10 minutes, depending on the pan and the kind of cheese you used.
         
-        Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”
+        4. Sprinkle with remaining chile, “hand out forks, then bring the the pan to the table.”
         
         `
     }
