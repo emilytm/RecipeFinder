@@ -1,21 +1,6 @@
 import recipes from "./recipes.js"
 
-const menu =  document.getElementById('menu')
-const modal = document.getElementById('modal')
 const searchBar = document.getElementById('search')
-
-const primaryNav = document.querySelector('.primary-navigation')
-const navToggle = document.querySelector('.mobile-nav-toggle')
-
-navToggle.addEventListener('click',() => {
-    const visibility = primaryNav.getAttribute('data-visible')
-    if (visibility === "false") {
-        primaryNav.setAttribute('data-visible',true)
-        navToggle.setAttribute('background-image','url(./assets/close.png)')
-    } else {
-        primaryNav.setAttribute('data-visible',false)
-    }
-})
 
 document.addEventListener("DOMContentLoaded",
     renderRecipes(recipes,false)
@@ -40,7 +25,8 @@ document.addEventListener('click',function(e){
         menu.classList.toggle('hidden') 
     } else if ((e.target.dataset.menu === 'login' || e.target.dataset.menu === 'signup')){
         modal.classList.toggle('hidden')
-        menu.classList.toggle('hidden') 
+        menu.classList.toggle('hidden')
+        alert("This functionality coming soonish") 
     } else if (e.target.dataset.clear){
         renderRecipes(recipes,false)
     } else {
