@@ -296,3 +296,8 @@ footer a {
     width: 100%;
     text-align: center;
 }
+
+h1 a {
+    text-decoration: none;
+    color:#3b2e34;
+}
