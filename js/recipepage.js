@@ -1,4 +1,4 @@
-import recipes from "./recipes.js"
+import recipes from "./js/recipes.js"
 
 const params = new URLSearchParams(window.location.search)
 const recipeDetails = document.getElementById('recipe-details')

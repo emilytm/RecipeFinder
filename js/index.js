@@ -1,4 +1,4 @@
-import recipes from "./recipes.js"
+import recipes from "./js/recipes.js"
 
 const searchBar = document.getElementById('search')
 
@@ -16,7 +16,7 @@ searchBar.addEventListener('submit',function(e){
 document.addEventListener('click',function(e){
     if(e.target.dataset.recipe){
         let recId = parseInt(e.target.dataset.recipe)
-        let recLink = `recipe.html?recipe=${recId}`
+        let recLink = `./html/recipe.html?recipe=${recId}`
         window.open(recLink, '_blank').focus()
     } else if ((e.target.dataset.menu === 'login' || e.target.dataset.menu === 'signup')){
         alert("This functionality coming soonish") 
