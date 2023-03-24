@@ -26,18 +26,18 @@ document.addEventListener('click',function(e){
 })
 
 function searchRecipes(searchTerm) {
-    let searchResults = []
-    searchResults = recipes.filter(recipe => {
-        let recipeValues = Object.values(recipe)
+    let searchResults = [];
+    searchResults = recipes.filter((recipe) => {
+        let recipeValues = Object.values(recipe);
         for (let value of recipeValues) {
-            if(typeof value === 'string'){
-                if(value.includes(searchTerm)){
-                    return true
+            if (typeof value === "string") {
+                if (value.includes(searchTerm)) {
+                    return true;
                 }
-            } 
+            }
         }
-    })
-    renderRecipes(searchResults,true)
+    });
+  renderRecipes(searchResults, true);
 }
 
 function renderRecipes(recipes,results) {

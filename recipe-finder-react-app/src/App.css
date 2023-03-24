@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+
+/* --- Page Structure --- */
+
+body {
+    margin: 0;
+    font-family: 'Rubik',Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* --- Header and Navigation Formatting --- */
+
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    background-color: #d79fb6;
+    padding: min(15vh,8rem) 2em 0 2em;
+    position: fixed;
+}
+
+@media (max-width: 768px){
+    .primary-navigation {
+        transform: translateX(100%);
+        transition: transform 150ms ease-out;
+        inset: 0 0 0 30%;
+
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform:translateX(0%);
+    }
+}
+
+.primary-header {
+    background-color: #ede6e9;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-nav-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    border: none;
+    width: 2rem;
+    aspect-ratio: 1;
+    z-index: 9999;
+    background-image: url(../public/assets/hamburger.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:transparent;
+}
+
+.header-nav {
+    box-sizing: border-box;
+
+    background-color:  #f6e2e9;
+    height: 4rem;
+    padding: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid #d79fb6;
+}
+
+
+/* --- Homepage Hero Section Formatting --- */
+
+.hero {
+   background-image: url(../public/assets/background.png);
+   background-size: cover;
+   border-bottom: 2px solid #e1b4c5;
+   padding: 4rem 1rem 4rem 1rem;
+   font-size: smaller;
+}
+
+.hero h3 {
+    margin-block-start: 0;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    grid-gap: .5em;
+}
+form button {
+    background-color: #82093c;
+    border: none;
+    padding: 0 1em;
+    border-radius: 4px;
+    color: white;
+}
+
+input {
+    width: 90%;
+    height: 2em;
+    border: none;
+    border-radius: 4px;
+    padding-inline-start: 1em;
+    font-family: 'Rubik',Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #fffafc;
+}
+
+input:active {
+    background-color: white;
+}
+
+button {
+    font-family: 'Rubik';
+    font-weight: bold;
+}
+
+
+/* -- Homepage Recipe List Formatting --*/
+
+.home {
+    background-color: #ede6e9;
+}
+
+.recipe-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    padding: 1em;
+}
+
+/* -- Footer Formatting --*/
+
+footer {
+    background-color: #3b2e34;
+    color: #d79fb6;
+    text-align: center;
+    padding: 1em;
+}
+footer a {
+    color: #ede6e9;
+    text-decoration: none;
+}
+
+
+/* --- Recipe/Explore Page Formatting and Styling --- */
+
+.recipe-page {
+    background-color: rgb(255, 246, 252);
+}
+
+.recipe-display {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+.recipe-display li {
+    padding-top: 1em;
+    line-height: 1.5em;
+}
+
+.recipe-display a {
+    text-decoration: none;
+}
+
+.recipe-display h5 {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* --- Typography --- */
+
+h1 {
+    margin-block-start: 0;
+    margin-top: 1.5rem;
+}
+
+h1 a {
+    text-decoration: none;
+    color:#3b2e34;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color:#3b2e34;
+}
+
+h1, h2, h3, p {
+    color: #3b2e34;
+}
+
+.modal h2,
+.modal h5 {
+    color: white;
+}
+
+span {
+    font-size: smaller;
+    padding-left: 1em;
+    color:#82093c;
+    cursor: pointer;
+}
+
+
+/* --- Accommodating Wider Screens --- */
+
+@media (min-width: 768px){
+    .recipe-list {
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        grid-template-rows: auto repeat(auto-fit);
+        grid-gap: 1em;
+        padding-bottom: 4em;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .list-title {
+        grid-column: 1 / -1;
+    }
+    header ul {
+        display: flex;
+    }
+    .hero,.header-nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .search {
+        justify-content: start;
+        max-width: 60%;
+    }
+    .menu-mobile-title {
+        display: none;
+    }
+    .header-nav li {
+        padding: 1em;
+    }
+    .menu-desktop {
+        font-weight: bolder;
+        color:#3b2e34
+    }
+    .primary-navigation {
+        flex-direction: row;
+        position: relative;
+        display: flex;
+        padding-top: 0;
+        background-color: transparent;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        font-size: .75em;
+        /*padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+        height: min-content;*/
+    }
+    .mobile-nav-toggle {
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    .primary-header {
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+/* --- Utility Classes --- */
+.flex {
+    display: flex;
+    gap: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-right {
+    text-align: right;
+}
