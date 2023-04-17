@@ -1,4 +1,4 @@
-import recipes from "./js/recipes.js"
+import recipes from "./recipes.js"
 
 const searchBar = document.getElementById('search')
 
