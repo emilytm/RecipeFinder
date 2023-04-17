@@ -7,19 +7,34 @@
     display: grid;
     background-color: white;
     border-radius: 4px;
-
-    grid-template-rows: 150px 1fr 1fr 1fr 1em;
+    align-items: center;
+    justify-items: start;
+    grid-template-rows: 150px repeat(4,auto);
     grid-template-columns: 1em 1.25fr .75fr 1em;
-    grid-template-areas: 
+    row-gap: 1.5em;
+/*     grid-template-areas: 
         "pic pic pic pic"
         ". title source ."
         ". tags time ."
         ". ingredients lastmade ."
         ". . . ."
+    ; */
+
+    grid-template-areas: 
+        "pic pic pic pic"
+        " . title title ."
+        ". source time ."
+        ". tags lastmade ."
+        ". ingredients ingredients ."
     ;
+
     grid-column-gap: .5em;
 }
 
+.recipe-box * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 .recipe-box:hover {
     background-color: #fffafc;
     box-shadow: 0px 1px 2px #d4cbcf;
@@ -36,15 +51,15 @@
 
 .recipe-title {
     grid-area: title;
-    align-self: center;
-    color: #82093c;
+/*     align-self: center;
+ */    color: #82093c;
 }
 
 .recipe-source {
     grid-area: source;
-    justify-self: end;
-    align-self: center;
-    
+ /*   justify-self: end;
+     align-self: center;
+ */    
 }
 
 .recipe-tags {
@@ -60,6 +75,7 @@
 
 .recipe-ingredients {
     grid-area: ingredients;
+    margin-bottom: 1.5em;
 }
 
 .recipe-made {
