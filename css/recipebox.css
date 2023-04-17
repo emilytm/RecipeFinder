@@ -1,6 +1,8 @@
 
 .recipe-box {
-    max-width: 760px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
     min-width: min-content;
     display: grid;
     background-color: white;

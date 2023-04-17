@@ -10,6 +10,10 @@ body {
     background-color: #ede6e9;
 }
 
+main {
+    background-color: #ede6e9;
+}
+
 
 /* --- Header and Navigation Formatting --- */
 
@@ -136,7 +140,7 @@ button {
 /* -- Footer Formatting --*/
 
 footer {
-    background-color: #b14100;
+    background-color: #225060;
     color: #fdd4bd;
     text-align: center;
     padding: 1em;
@@ -150,7 +154,7 @@ footer a {
 /* --- Recipe/Explore Page Formatting and Styling --- */
 
 .recipe-page {
-    background-color: rgb(255, 246, 252);
+    background-color: #ede6e9;
 }
 
 .recipe-display {
@@ -158,6 +162,7 @@ footer a {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
+    background-color: #f6f1f3;
 }
 .recipe-display li {
     padding-top: 1em;
