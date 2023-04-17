@@ -13,7 +13,7 @@ function findRecipe(recipeId) {
     if (isValidId === 2) {
         getRandomRecipe()
     } else if (isValidId === 1) {
-        renderRecipe(recipes[recipeId])
+        renderRecipe(recipes[recipeId-1])
     } else {
         getRandomRecipe()
     }

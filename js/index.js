@@ -16,7 +16,7 @@ searchBar.addEventListener('submit',function(e){
 document.addEventListener('click',function(e){
     if(e.target.dataset.recipe){
         let recId = parseInt(e.target.dataset.recipe)
-        let recLink = `./html/recipe.html?recipe=${recId}`
+        let recLink = `./pages/recipe.html?recipe=${recId}`
         window.open(recLink, '_blank').focus()
     } else if ((e.target.dataset.menu === 'login' || e.target.dataset.menu === 'signup')){
         alert("This functionality coming soonish") 
