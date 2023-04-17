@@ -22,7 +22,7 @@ main {
     padding: 0;
     margin: 0;
     flex-direction: column;
-    background-color: #225060;
+    background-color: #174250;
     padding: min(15vh,8rem) 2em 0 2em;
     position: fixed;
 }
@@ -54,13 +54,14 @@ main {
     right: 1rem;
     border: none;
     width: 2rem;
-    aspect-ratio: 1;
-    z-index: 9999;
-    background-image: url(./assets/hamburger.png);
+    height: 2rem;
+/*     aspect-ratio: 1;
+ */    z-index: 9999;
+    background-image: url(/assets/hamburger.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color:transparent;
-}
+ }
 
 .header-nav {
     box-sizing: border-box;
@@ -89,10 +90,10 @@ main {
 
 
 form {
-    width: 50%;
     display: flex;
     justify-content: space-around;
     grid-gap: .5em;
+    font-size: small;
 }
 form button {
     background-color: #225060;
@@ -239,6 +240,11 @@ span {
     .list-title {
         grid-column: 1 / -1;
     }
+
+    form input {
+        width: 50%;
+    }
+
     header ul {
         display: flex;
     }
