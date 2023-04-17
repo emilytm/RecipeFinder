@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: 'Rubik',Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    background-color: #ede6e9;
 }
 
 
@@ -17,7 +18,7 @@ body {
     padding: 0;
     margin: 0;
     flex-direction: column;
-    background-color: #d79fb6;
+    background-color: #225060;
     padding: min(15vh,8rem) 2em 0 2em;
     position: fixed;
 }
@@ -36,7 +37,7 @@ body {
 }
 
 .primary-header {
-    background-color: #ede6e9;
+    background-color: #225060;
     padding-left: 1rem;
     padding-right: 1rem;
     justify-content: space-between;
@@ -60,7 +61,7 @@ body {
 .header-nav {
     box-sizing: border-box;
 
-    background-color:  #f6e2e9;
+    background-color:  #fff1e9;
     height: 4rem;
     padding: 1em;
     display: flex;
@@ -69,7 +70,7 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
-    border-bottom: 2px solid #d79fb6;
+    border-bottom: 2px solid #ffdbc6;
 }
 
 
@@ -78,23 +79,19 @@ body {
 .hero {
    background-image: url(/assets/background.png);
    background-size: cover;
-   border-bottom: 2px solid #e1b4c5;
+   border-bottom: 2px solid #225060;
    padding: 4rem 1rem 4rem 1rem;
-   font-size: smaller;
 }
 
-.hero h3 {
-    margin-block-start: 0;
-}
 
 form {
-    width: 90%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     grid-gap: .5em;
 }
 form button {
-    background-color: #82093c;
+    background-color: #225060;
     border: none;
     padding: 0 1em;
     border-radius: 4px;
@@ -133,18 +130,19 @@ button {
     grid-template-columns: 1fr;
     grid-row-gap: 1em;
     padding: 1em;
+    background-color: #f6f1f3;
 }
 
 /* -- Footer Formatting --*/
 
 footer {
-    background-color: #3b2e34;
-    color: #d79fb6;
+    background-color: #b14100;
+    color: #fdd4bd;
     text-align: center;
     padding: 1em;
 }
 footer a {
-    color: #ede6e9;
+    color: #becafc;
     text-decoration: none;
 }
 
@@ -185,18 +183,21 @@ h1 {
 
 h1 a {
     text-decoration: none;
-    color:#3b2e34;
+    color:#4D734B;
 }
 
 .primary-navigation a {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bolder;
-    color:#3b2e34;
+}
+
+.primary-navigation a, .primary-header a, .primary-header h1 {
+    color: #d9ebf2;
 }
 
 h1, h2, h3, p {
-    color: #3b2e34;
+    color: #225060;
 }
 
 .modal h2,
@@ -215,15 +216,20 @@ span {
 /* --- Accommodating Wider Screens --- */
 
 @media (min-width: 768px){
+
+    .desktop-max-size {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
     .recipe-list {
-        margin-left: 10%;
-        margin-right: 10%;
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
         grid-template-rows: auto repeat(auto-fit);
         grid-gap: 1em;
         padding-bottom: 4em;
-        padding-left: 0;
-        padding-right: 0;
     }
     .list-title {
         grid-column: 1 / -1;
@@ -231,14 +237,14 @@ span {
     header ul {
         display: flex;
     }
-    .hero,.header-nav {
+/*     .hero,.header-nav {
         padding-left: 10%;
         padding-right: 10%;
-    }
+    } */
     .search {
         justify-content: start;
-        max-width: 60%;
-    }
+/*         max-width: 60%;
+ */    }
     .menu-mobile-title {
         display: none;
     }
@@ -270,8 +276,8 @@ span {
     }
     .primary-header {
         justify-content: space-between;
-        padding-left: 5%;
-        padding-right: 5%;
+/*         padding-left: 5%;
+        padding-right: 5%; */
     }
 }
 
